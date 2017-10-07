@@ -20,6 +20,8 @@ namespace ClientesWebApi.Models
 
         public Categoria Categoria { get; set; }
 
+        public List<Gusto> Gustos { get; set; }
+
         
     }
 }
