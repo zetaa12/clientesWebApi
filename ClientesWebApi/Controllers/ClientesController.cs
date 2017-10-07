@@ -37,7 +37,12 @@ namespace ClientesWebApi.Controllers
                 Edad = c.Edad,
                 Categoria = new {
                      Nombre = c.Categoria.Nombre
-                }
+                },
+                Gustos = c.Gustos.Select(g=> new
+                {
+                    ID = g.ID,
+                    Nombre  = g.Nombre
+                })
             });
         }
         //api/clientes/{id}
